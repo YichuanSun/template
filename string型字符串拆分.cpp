@@ -5,7 +5,7 @@ int main()  {
 
     return 0;
 }
-
+//这段代码存在未知问题，先不要用了 
 void splitString(string& a,vector<string>& b,string c)  {
     int pos1,pos2;
     pos1=0;
