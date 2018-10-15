@@ -1,13 +1,30 @@
 #include <bits/stdc++.h>
+#define MAX_E 1005
 #define N 1005
 using namespace std;
 
 int parent[N];
+struct edge {int u,v,cost;};
+int V,E;        //顶点数和边数
+edge es[MAX_E];
 
-void UFset();
-int Find(int x);
-void Union(int R1,int R2);
-bool same(int a,int b);
+void UFset();       //并查集初始化函数
+int Find(int x);    //查找函数
+void Union(int R1,int R2);      //将R1和R2所在集合合并
+bool same(int a,int b);         //判断a和b是否在同一个集合中
+bool cmp(edge e1,edge e2)   { return e1.cost<e2.cost;}
+int kruskal()   {
+    sort(es,es+E,cmp);
+    UFset();
+    int res=0;
+    for (int i=0;i<E;i++)   {
+        if (!same(es[i].u,es[i].v)) {
+            Union(es[i].u,es[i].v);
+            res+=es[i].cost;
+        }
+    }
+    return res;
+}
 
 int main()  {
     return 0;
@@ -48,14 +65,3 @@ bool same(int a,int b)  {
     if (Find(a)==Find(b))   return true;
     return false;
 }
-
-
-
-
-
-
-
-
-
-
-
