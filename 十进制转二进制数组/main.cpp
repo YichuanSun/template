@@ -1,3 +1,4 @@
+//十进制转二进制数组
 #include <bits/stdc++.h>
 #define N 10005
 using namespace std;
@@ -22,3 +23,5 @@ void pfbin(int a)   {
     for (int k=0;k<cnt;k++) cout<<bi[k];
     cout<<endl;
 }
+
+//十进制转二进制数组 end

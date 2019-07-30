@@ -1,3 +1,4 @@
+//最小生成树kruskal算法
 //设数组parent存放集合,parent[i]=j意为i的根节点为j
 //规定根节点处的元素值为负，它的相反数为该集合节点个数
 #include <bits/stdc++.h>

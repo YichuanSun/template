@@ -1,3 +1,4 @@
+//最小生成树prim算法
 #include <bits/stdc++.h>
 #define INF 10000005
 #define MAX_V 1005
@@ -30,6 +31,6 @@ int prim(int start)  {
     return res;
 }
 
-
+//最小生成树prim算法 end
 
 

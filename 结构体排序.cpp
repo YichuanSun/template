@@ -1,3 +1,4 @@
+//结构体排序
 #include <bits/stdc++.h>
 using namespace std;
 typedef pair<int,double> term;
@@ -20,3 +21,5 @@ int main()  {
     }
     return 0;
 }
+
+//结构体排序 end

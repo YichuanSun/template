@@ -1,3 +1,4 @@
+//C++高位补零
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,3 +10,5 @@ int main()	{
 	cout<<num<<endl;
 	return 0;
 }
+
+//C++高位补零 end
